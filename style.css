@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #0e1111;
+    color: #e35d5b; /* change later */
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+.deel {
+    height: 100vh;
+    width: 70%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+}
+h1 {
+    font-size: 5rem;
+    background: linear-gradient(to right, #e53935, #e35d5b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+nav ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+nav li {
+    padding-right: 2rem;
+}
+nav a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #e35d5b;
+}
+nav i {
+    color: #e35d5b
+}
+nav li:hover {
+    transform: translateY(-0.3rem);
+    transition: 200ms;
+}
+/* main*/
+/* me */
+#me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+article * {
+    padding: 0.5rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
+    font-style: italic;
+}
+p {
+    font-size: 2rem;
+    padding: 1rem;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+#me ul li {
+    font-size: 2rem;
+    border-bottom: 1px solid #e35d5b;
+}
+/* opleiding */
+#opleiding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+h4 {
+    font-size: 2rem;
+}
+#opleiding article {
+    border-bottom: 1px solid #e35d5b;
+    padding: 2rem 1rem 1rem 1rem;
+}
+/* projecten */
+#projecten {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#projecten article {
+    border-bottom: 1px solid #e35d5b;
+    padding: 2rem 1rem 1rem 1rem;
+}
+article a {
+    font-size: 1.7rem;
+    margin-left: 1rem;
+}
+.title {
+    display: flex;
+    align-items: center;
+}
+#projecten h3 {
+    padding-right: 1rem;
+    border-right: 1px solid #e35d5b;
+    font-style: normal;
+}
+#projecten h4 {
+    border-right: 1px solid #e35d5b;
+}
+a {
+    text-decoration: none;
+}
+#projecten a:hover {
+    border-bottom: 1px solid #e35d5b;
+    transform: translateY(-0.3rem);
+    transition: 200ms;
+}
+/* skills */
+#skills h3 {
+    font-style: normal;
+}
+#skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#skills li {
+    font-size: 2rem;
+}
+.skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+}
+/* percentage */
+.beginner {width: 10%; background: linear-gradient(to right, #ff416c, #ff4b2b); content: 10%}
+.basis {width: 20%; background: linear-gradient(to right, #ff416c, #ff4b2b); content: 10%}
+.okay {width: 50%; background: linear-gradient(to right, #ff416c, #ff4b2b);; content: 10%}
+.goed {width: 70%; background: linear-gradient(to right, #ff416c, #ff4b2b); content: 10%}
+.geweldig {width: 80%; background: linear-gradient(to right, #ff416c, #ff4b2b); content: 10%}
+.expert {width: 100%; background: linear-gradient(to right, #ff416c, #ff4b2b);; content: 10%}
+/* reflectie */
+#reflectie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+/*contact */
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form * {
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: #FBFAF5;
+}
+#contact form *, #contact ul * {
+    font-size: 2rem;
+}
+#contact ul {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+#contact li {
+    padding: 1rem;
+}
+textarea {
+    height: 200px;
+}
+/*footer */
+footer {
+    position: sticky;
+    bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .deel {
+        height: 120vh;
+    }
+
+    header {
+        position: absolute;
+    }
+
+    footer {
+        position: absolute;;
+    }
+}
