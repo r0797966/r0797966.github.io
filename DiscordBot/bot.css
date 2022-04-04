@@ -1,91 +1,166 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 10px;
-}
-body {
     background-color: #0e1111;
-    color: #CF000F;
-    text-shadow: 1px 2px 2px #4E4E4E;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    width: 70%;
-    margin: 0 auto;
+    color: #5D33F2;
+    font-size: 10px;
+    scroll-behavior: smooth;
 }
+
 /* header */
+header * {
+    margin: 1rem;
+    text-shadow: 2px 1px 2px #000;
+}
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
+    border-bottom: 1px solid #5D33F2;
 }
-h1 {
-    font-size: 4rem;
+
+header h1 {
+    font-size: 4.5rem;
 }
-nav ul {
+
+header ul {
     display: flex;
+    flex-direction: row;
     list-style-type: none;
+    flex-wrap: wrap;
 }
-nav li {
-    padding-right: 2rem;
-}
-nav li a {
-    color: #CF000F;
+header a {
     font-size: 2rem;
     text-decoration: none;
 }
-nav li:hover {
+header li:hover {
     transform: translateY(-0.3rem);
     transition: 200ms;
 }
-/* main*/
-p, article {
-    font-size: 2rem;
-    padding: 2rem;
-}
-main a {
-    font-size: 2rem;
-    color: #CF000F;
-    text-decoration: none;
-}
-main a:hover {
-    text-decoration: underline;
-}
+
+/*main*/
 main {
-    border-top: 2px solid #CF000F;
-    border-bottom: 2px solid #CF000F;
+    max-width: 70%;
+    margin: 5rem auto;
 }
-h2 {
-    font-size: 3rem;
-    font-style: italic;
+
+.about {
+    display: flex;
+    flex-direction: column;
 }
-#commands {
+
+p {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+    padding: 3rem;
+}
+#features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+img {
+    width: 350px;
+    max-width: 100%;
+}
+
+#features article {
+    border: 1px solid #ccc;
+    max-width: 360px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#commands * {
-    font-size: 2rem;
+
+#features article * {
+    padding: 1rem 0 1rem 0;
+    color: #ccc;
+
 }
-#commands ol * {
-    padding: 1rem;
+
+#features p {
+    font-size: 1.5rem;
 }
-#ideas {
-    font-size: 3rem;
-}
-/*footer*/
-footer ul {
+
+#about ul {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
     list-style-type: none;
 }
-footer a {
+
+#about a {
     font-size: 2rem;
-    color: #CF000F;
-    text-decoration: none;
 }
-footer a:hover {
-    text-decoration: underline;
+
+/* commands */
+h2 {
+    font-size: 3.5rem;
+    padding: 2rem;
+}
+
+#commands ul, #ideas ul {
+    list-style-type: none;
+}
+
+#commands li, #ideas li {
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #C2C2C2;
+    text-shadow: 0.2px 0.4px 0.5px #000;
+    font-size: 2rem;
+}
+
+/* footer */
+footer img {
+    width: 75px;
+    max-width: 100%;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    border-top: 1px solid #5D33F2;
+}
+
+footer #left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+footer h6 {
+    font-size: 2rem;
+}
+
+footer p {
+    font-size: 1.8rem;
+}
+
+footer #right ul {
+    display: flex;
+    list-style-type: none;
+}
+
+footer li {
+    padding: 1rem;
+}
+
+footer li a {
+    font-size: 1.5rem;
 }
