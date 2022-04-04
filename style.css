@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     background-color: #0e1111;
-    color: #e35d5b; /* change later */
+    color: #93edc7; /* change later */
     font-size: 10px;
     scroll-behavior: smooth;
 }
@@ -24,7 +24,7 @@ header {
 }
 h1 {
     font-size: 5rem;
-    background: linear-gradient(to right, #e53935, #e35d5b);
+    background: linear-gradient(to right, #1cd8d2, #93edc7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
@@ -42,10 +42,10 @@ nav li {
 nav a {
     font-size: 2rem;
     text-decoration: none;
-    color: #e35d5b;
+    color: #1cd8d2;
 }
 nav i {
-    color: #e35d5b
+    color: #1cd8d2;
 }
 nav li:hover {
     transform: translateY(-0.3rem);
@@ -64,6 +64,7 @@ article * {
 }
 h2 {
     font-size: 4rem;
+    color: #1cd8d2;
 }
 h3 {
     font-size: 3rem;
@@ -80,7 +81,7 @@ ul {
 }
 #me ul li {
     font-size: 2rem;
-    border-bottom: 1px solid #e35d5b;
+    border-bottom: 1px solid #1cd8d2;
 }
 /* opleiding */
 #opleiding {
@@ -93,7 +94,7 @@ h4 {
     font-size: 2rem;
 }
 #opleiding article {
-    border-bottom: 1px solid #e35d5b;
+    border-bottom: 1px solid #1cd8d2;
     padding: 2rem 1rem 1rem 1rem;
 }
 /* projecten */
@@ -104,7 +105,7 @@ h4 {
     align-content: center;
 }
 #projecten article {
-    border-bottom: 1px solid #e35d5b;
+    border-bottom: 1px solid #1cd8d2;
     padding: 2rem 1rem 1rem 1rem;
 }
 article a {
@@ -117,21 +118,27 @@ article a {
 }
 #projecten h3 {
     padding-right: 1rem;
-    border-right: 1px solid #e35d5b;
+    border-right: 1px solid #1cd8d2;
     font-style: normal;
 }
 #projecten h4 {
-    border-right: 1px solid #e35d5b;
+    border-right: 1px solid #1cd8d2;
 }
 a {
     text-decoration: none;
 }
 #projecten a:hover {
-    border-bottom: 1px solid #e35d5b;
+    border-bottom: 1px solid #1cd8d2;
     transform: translateY(-0.3rem);
     transition: 200ms;
 }
 /* skills */
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
 #skills h3 {
     font-style: normal;
 }
@@ -149,12 +156,12 @@ a {
     color: white; /* White text color */
 }
 /* percentage */
-.beginner {width: 10%; background: linear-gradient(to right, #ff416c, #ff4b2b); content: 10%}
-.basis {width: 20%; background: linear-gradient(to right, #ff416c, #ff4b2b); content: 10%}
-.okay {width: 50%; background: linear-gradient(to right, #ff416c, #ff4b2b);; content: 10%}
-.goed {width: 70%; background: linear-gradient(to right, #ff416c, #ff4b2b); content: 10%}
-.geweldig {width: 80%; background: linear-gradient(to right, #ff416c, #ff4b2b); content: 10%}
-.expert {width: 100%; background: linear-gradient(to right, #ff416c, #ff4b2b);; content: 10%}
+.beginner {width: 10%; background: linear-gradient(to right, #1cd8d2, #93edc7); content: 10%}
+.basis {width: 20%; background: linear-gradient(to right, #1cd8d2, #93edc7); content: 10%}
+.okay {width: 50%; background: linear-gradient(to right, #1cd8d2, #93edc7); content: 10%}
+.goed {width: 70%; background: linear-gradient(to right, #1cd8d2, #93edc7); content: 10%}
+.geweldig {width: 80%; background: linear-gradient(to right, #1cd8d2, #93edc7); content: 10%}
+.expert {width: 100%; background: linear-gradient(to right, #1cd8d2, #93edc7); content: 10%}
 /* reflectie */
 #reflectie {
     display: flex;
@@ -202,14 +209,31 @@ footer {
 
 @media screen and (max-width: 900px) {
     .deel {
-        height: 120vh;
+        height: initial;
+        padding: 2rem;
     }
 
-    header {
-        position: absolute;
+    header, footer {
+        position: relative;
     }
 
-    footer {
-        position: absolute;;
+    .title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #projecten h3 {
+        border: none;
+    }
+    #projecten h4 {
+        border-right: none;
+    }
+
+    nav ul li:nth-last-child(1), nav ul li:nth-last-child(2) {
+        display: none;
+    }
+
+    nav ul li {
+        padding: 2rem;
     }
 }
