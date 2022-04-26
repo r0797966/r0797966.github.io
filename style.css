@@ -83,6 +83,12 @@ ul {
     font-size: 2rem;
     border-bottom: 1px solid #1cd8d2;
 }
+.btn {
+    font-size: 2rem;
+}
+video {
+    width: 355px
+}
 /* opleiding */
 #opleiding {
     display: flex;
@@ -131,6 +137,9 @@ a {
     border-bottom: 1px solid #1cd8d2;
     transform: translateY(-0.3rem);
     transition: 200ms;
+}
+#projecten p a {
+    font-size: 2rem;
 }
 /* skills */
 #skills {
