@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #000;
+    background-color: #ece9e6;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D22B2B;
+    box-shadow: 1px 1px 2px #000;
+}
+
+header * {
+    background-color: #D22B2B;
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav ul li:hover {
+    transform: translateY(-0.2rem);
+    transition: 200ms;
+}
+
+/*ABOUT*/
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+#about > * {
+    border: 1px solid #000;
+}
+
+img {
+    width: 190px;
+}
+
+#about article {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 50%;
+} /* kleur aanpassen */
+
+article p, ul li, #about article ul li a {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    list-style-type: none;
+}
+
+#about article ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+/*OPLEIDING*/
+#opleiding {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#opleiding article {
+    margin: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+#opleiding section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+/*PROJECTEN*/
+#projecten {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#projecten article {
+    display: flex;
+    flex-direction: column;
+}
+
+#projecten article section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#projecten h3 {
+    border-right: 1px solid #000;
+    padding-right: 1rem;
+}
+
+#projecten h4 {
+    padding: 1rem;
+    border-right: 1px solid #000;
+}
+
+#projecten h5 {
+    padding: 1rem;
+}
+h5 a {
+    font-size: 1.5rem;
+}
+
+h5:hover {
+    transform: translateY(-0.2rem);
+    transition: 200ms;
+}
+
+/*VAARDIGHEDEN*/
+#vaardigheden {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#vaardigheden ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+}
+
+.beginner {width: 10%; background: linear-gradient(to right, #93291e, #ed213a);}
+.beter {width: 20%; background: linear-gradient(to right, #93291e, #ed213a);}
+.goed {width: 50%; background: linear-gradient(to right, #93291e, #ed213a);}
+.geweldig {width: 70%; background: linear-gradient(to right, #93291e, #ed213a); }
+.expert {width: 100%; background: linear-gradient(to right, #93291e, #ed213a);}
+
+/*COMPETENTIES*/
+#competenties {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#competenties section.comp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#competenties section.dlr {
+    width: 350px;
+    margin: 1rem;
+    background: linear-gradient(to right, #d3cce3, #e9e4f0);
+}
+
+#competenties section.dlr * {
+    padding: 1rem;
+    background: linear-gradient(to right, #d3cce3, #e9e4f0);
+}
+
+#competenties section.dlr p {
+    font-size: 1.5rem;
+}
+
+/*CONTACT*/
+#contact {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#contact section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 2rem;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    padding: 2rem;
+    border: 1px solid #000;
+    background-color: #f4F4f4;
+}
+
+form * {
+    font-size: 1.5rem;
+    background-color: #f4F4f4;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: #D1D1D1;
+    border-radius: 10px;
+}
+
+#contact section * {
+    font-size: 1.5rem;
+}
+
+form input:last-of-type {
+    cursor: not-allowed;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    bottom: 0;
+    position: sticky;
+    background-color: #D22B2B;
+    box-shadow: 1px 1px 2px 1px #000;
+}
+
+footer * {
+    background-color: #D22B2B;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer a {
+    font-size: 1.1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+
+    #about article ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about article ul li {
+        padding: 1rem
+    }
+
+    video {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px)  {
+    #contact section {
+        grid-template-columns: 1fr;
+    }
+}
